@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <rect width="800" height="500" fill="#F1ECDF"/>
+  <rect x="6" y="6" width="788" height="488" fill="none" stroke="#C9BFA8" stroke-width="2" stroke-dasharray="6 6"/>
+  <g stroke="#B7AC91" stroke-width="2" fill="none">
+    <rect x="180" y="130" width="440" height="240" />
+    <line x1="180" y1="180" x2="620" y2="180"/>
+    <line x1="320" y1="130" x2="320" y2="370"/>
+    <line x1="460" y1="130" x2="460" y2="370"/>
+    <circle cx="250" cy="230" r="18"/>
+    <circle cx="390" cy="290" r="18"/>
+    <circle cx="540" cy="230" r="18"/>
+  </g>
+  <text x="400" y="440" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#8A7F68">Replace with parametric-cad.jpg (screenshot of the CAD tool)</text>
+</svg>
