@@ -37,12 +37,14 @@
   entryToggles.forEach(function (btn) {
     var panel = document.getElementById(btn.getAttribute('aria-controls'));
     if (!panel) return;
+    var label = btn.querySelector('span');
+    var viewText = label ? label.textContent : '';
+    var hideText = viewText.replace(/^View/, 'Hide');
     btn.addEventListener('click', function () {
       var isOpen = btn.getAttribute('aria-expanded') === 'true';
       btn.setAttribute('aria-expanded', !isOpen);
       panel.classList.toggle('is-open', !isOpen);
-      var label = btn.querySelector('span');
-      if (label) label.textContent = isOpen ? 'View photos' : 'Hide photos';
+      if (label) label.textContent = isOpen ? viewText : hideText;
     });
   });
 })();
