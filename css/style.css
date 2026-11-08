@@ -387,6 +387,19 @@ html[data-theme="dark"] .theme-toggle .knob { transform: translateX(24px); }
   border-radius: 4px;
   display: block;
 }
+.entry-gallery .entry-video { grid-column: 1 / -1; }
+.entry-gallery .entry-video iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 1px solid var(--hairline);
+  border-radius: 4px;
+  display: block;
+}
+.entry-gallery figcaption {
+  margin-top: 8px;
+  font-size: 13px;
+  color: var(--ink-muted);
+}
 /* For diagrams/screenshots where cropping would lose content */
 .entry-gallery img.fit-contain {
   object-fit: contain;
